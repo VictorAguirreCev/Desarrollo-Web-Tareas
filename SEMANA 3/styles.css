@@ -1,0 +1,143 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* --- ESTILOS DEL HEADER Y LOGO --- */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Control del tamaño del Logo */
+.logo-lyfesy {
+    max-width: 180px; /* Ajusta este número si quieres el logo más grande o chico */
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #1ABC9C;
+}
+
+/* --- ESTRUCTURA PRINCIPAL --- */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+section, article {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+h2, h3, h4 { color: #2C3E50; margin-bottom: 15px; }
+h2 { border-left: 5px solid #1ABC9C; padding-left: 10px; }
+
+/* --- MULTIMEDIA (VIDEO Y FOTO) --- */
+.media-container, .video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilo para que el video sea responsive y no se salga de la pantalla */
+video {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del video */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- TABLAS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td { border: 1px solid #ddd; padding: 12px; }
+th { background-color: #1ABC9C; color: white; }
+
+/* --- FORMULARIO --- */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label { display: block; margin-top: 10px; font-weight: bold; }
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-submit:hover { background-color: #1ABC9C; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    margin-top: 20px;
+}
