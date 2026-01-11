@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva - Semana 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Galería Interactiva</h1>
+            <p>Sube imágenes mediante URL o genera aleatorias</p>
+        </header>
+
+        <div class="controls">
+            <input type="url" id="imgUrl" placeholder="Pega una URL de imagen aquí...">
+            <button id="addBtn">Agregar Manual</button>
+            <button id="autoBtn" class="btn-auto">✨ Aleatoria</button>
+            <button id="delBtn" class="btn-danger">Eliminar Seleccionada</button>
+        </div>
+
+        <div id="gallery" class="gallery-grid"></div>
+
+        <footer>
+            <p>Realizado para la asignatura Desarrollo de Aplicaciones Web de la Universidad Estatal Amazónica</p>
+            <p><strong>Autor: Victor Aguirre Cevallos</strong></p>
+        </footer>
+    </div>
+
+    <div id="lightboxModal" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="fullImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* CONTROLES Y BOTONES */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover { background-color: #0056b3; }
+
+.btn-auto { background-color: #6f42c1; } /* Morado */
+.btn-auto:hover { background-color: #553096; }
+
+.btn-danger { background-color: #dc3545; } /* Rojo */
+.btn-danger:hover { background-color: #a71d2a; }
+
+/* GALERÍA */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 4px solid transparent; /* Espacio para borde */
+    transition: transform 0.2s;
+}
+
+.gallery-img:hover { transform: scale(1.03); }
+
+/* CLASE SELECCIONADA (IMPORTANTE) */
+.selected {
+    border-color: #28a745; /* Verde */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* MODAL (LIGHTBOX) */
+.lightbox {
+    display: none; /* Oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px white;
+}
+
+.close {
+    position: absolute;
+    top: 20px; right: 35px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
