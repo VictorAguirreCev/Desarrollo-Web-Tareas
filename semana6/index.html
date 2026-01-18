@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - UEA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://elecciones.uea.edu.ec/elecciones/images/uea_logo.png" sizes="32x32">
+</head>
+<body>
+
+    <div class="container">
+        <header class="form-header">
+            <img src="https://elecciones.uea.edu.ec/elecciones/images/uea_logo.png" alt="Logo Universidad Estatal Amazónica" class="uea-logo">
+            <h2>Formulario de Registro</h2>
+        </header>
+
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" placeholder="Mínimo 3 caracteres" autocomplete="off">
+                <span class="error-msg" id="errorNombre"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com" autocomplete="off">
+                <span class="error-msg" id="errorCorreo"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="Debes ser mayor de 18">
+                <span class="error-msg" id="errorEdad"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Mínimo 8 carateres, 1 número, 1 especial">
+                <span class="error-msg" id="errorPassword"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar Contraseña:</label>
+                <input type="password" id="confirmPassword" placeholder="Repite tu contraseña">
+                <span class="error-msg" id="errorConfirmPassword"></span>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="btnSubmit" disabled>Registrar</button>
+                <button type="button" id="btnReset">Reiniciar</button>
+            </div>
+        </form>
+
+        <div class="student-footer">
+            ESTUDIANTE: VICTOR AGUIRRE CEVALLOS
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

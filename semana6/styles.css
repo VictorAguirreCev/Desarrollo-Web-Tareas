@@ -1,0 +1,157 @@
+/* Variables de color para fácil modificación */
+:root {
+    --uea-blue-dark: #003a70; /* Azul institucional oscuro */
+    --uea-blue-light: #0056b3; /* Azul un poco más claro para interacciones */
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --bg-color: #f0f2f5;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Un poco de espacio en móviles */
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 6px 15px rgba(0, 58, 112, 0.15); /* Sombra sutil azulada */
+    width: 100%;
+    max-width: 450px;
+    border-top: 5px solid var(--uea-blue-dark); /* Barra superior institucional */
+}
+
+/* Nueva cabecera con logo flexible */
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Para que se adapte en pantallas muy pequeñas */
+}
+
+.uea-logo {
+    max-width: 80px; /* Tamaño controlado del logo */
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: var(--uea-blue-dark); /* Color azul UEA */
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--uea-blue-dark);
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dfe3e8;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--uea-blue-light); /* Foco azul UEA */
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+/* Estilos de validación */
+input.input-error {
+    border-color: var(--error-color);
+    background-color: #fff8f8;
+}
+
+input.input-success {
+    border-color: var(--success-color);
+    background-color: #f8fffb;
+}
+
+.error-msg {
+    color: var(--error-color);
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+    min-height: 18px;
+    font-weight: 500;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#btnSubmit {
+    background-color: var(--uea-blue-dark); /* Botón principal azul UEA */
+    color: white;
+}
+
+#btnSubmit:disabled {
+    background-color: #a0b3c6; /* Azul apagado */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#btnSubmit:hover:not(:disabled) {
+    background-color: var(--uea-blue-light);
+}
+
+#btnReset {
+    background-color: #6c757d;
+    color: white;
+}
+
+#btnReset:hover {
+    background-color: #5a6268;
+}
+
+/* Nuevo estilo para el pie de página del estudiante */
+.student-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--uea-blue-dark);
+    font-weight: 700;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    letter-spacing: 0.5px;
+}
