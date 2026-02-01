@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología e Innovación - Tarea Semana 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TecnoStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/1200x400/2c3e50/white?text=Desarrollo+Web" class="d-block w-100" alt="Desarrollo Web">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Innovación Digital</h5>
+                        <p>Soluciones tecnológicas a tu alcance.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x400/e67e22/white?text=Hardware+Avanzado" class="d-block w-100" alt="Hardware">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Hardware Potente</h5>
+                        <p>Componentes de última generación para profesionales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.co/1200x400/27ae60/white?text=Soporte+24/7" class="d-block w-100" alt="Soporte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Soporte Técnico</h5>
+                        <p>Estamos contigo en cada paso del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="text-center my-5">
+            <h3>Interactividad JS</h3>
+            <p>Prueba nuestra funcionalidad dinámica:</p>
+            <button id="btnAlerta" class="btn btn-outline-primary btn-lg">¡Haz clic para una sorpresa!</button>
+        </div>
+
+        <hr>
+
+        <section id="productos" class="py-4">
+            <h2 class="text-center mb-4">Catálogo de Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Laptop Gamer X15</td>
+                            <td>Computación</td>
+                            <td>$1,200</td>
+                            <td><span class="badge bg-success">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Teclado Mecánico RGB</td>
+                            <td>Periféricos</td>
+                            <td>$85</td>
+                            <td><span class="badge bg-warning text-dark">Últimas unidades</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Monitor 4K Ultra</td>
+                            <td>Pantallas</td>
+                            <td>$450</td>
+                            <td><span class="badge bg-danger">Agotado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contacto" class="py-4 mb-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form id="formularioContacto" novalidate>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                                    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                                    <div class="invalid-feedback">Ingresa un correo válido.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                                    <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                            </form>
+                            <div id="mensajeExito" class="alert alert-success mt-3 d-none" role="alert">
+                                ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Víctor Aguirre C. | Estudiante de Ingeniería TI</p>
+            <p class="small text-secondary">Desarrollado con Bootstrap 5 y JavaScript</p>
+            <div>
+                <a href="#" class="text-white me-2">GitHub</a>
+                <a href="#" class="text-white">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
